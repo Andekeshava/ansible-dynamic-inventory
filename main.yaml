@@ -1,5 +1,6 @@
 - name: ping frontend server
   hosts: roboshop_frontend
+  become: yes
   tasks:
   - name: ping the server
     ping:
@@ -7,3 +8,8 @@
   - name: Print hello
     debug:
       msg: Hello....!! welcome
+
+  - name: Install nginx
+    pacakge:
+      name: nginx
+      state: present

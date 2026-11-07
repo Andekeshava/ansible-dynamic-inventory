@@ -10,6 +10,6 @@
       msg: Hello....!! welcome
 
   - name: Install nginx
-    pacakge:
+    package:
       name: nginx
       state: present

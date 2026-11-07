@@ -9,3 +9,6 @@ filters:
 
 hostnames:
 - private-ip-address
+
+keyd_groups:
+- key: tags.Name
